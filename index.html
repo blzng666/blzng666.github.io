@@ -43,9 +43,7 @@
   @media (min-width: 640px) { .wrap { padding: 0 28px; } }
 
   /* Navigation */
-  nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
-  .mark { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 12px; text-decoration: none;
-          background: linear-gradient(180deg, var(--silver), var(--silver-dark)); color: var(--ink); font-weight: 600; font-size: 17px; }
+  nav { display: flex; align-items: center; justify-content: flex-end; min-height: 40px; padding: 20px 0; }
   nav ul { display: flex; gap: 22px; list-style: none; margin: 0; padding: 0; }
   nav ul a { text-decoration: none; text-transform: uppercase; font-size: 15px; color: var(--muted); }
   nav ul a:hover, nav ul a:focus-visible { color: var(--silver); }
@@ -177,7 +175,6 @@
 <header class="hero">
   <div class="wrap">
     <nav aria-label="Main">
-      <a class="mark" href="#top" aria-label="Heartwell Ecoy, home">HE</a>
       <ul>
         <li><a href="#work">Work</a></li>
         <li><a href="#about">About</a></li>
